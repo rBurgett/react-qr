@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jprichardson/react-qr#readme",
   "dependencies": {
+    "prop-types": "^15.6.0",
     "qr-image": "^3.1.0"
   },
   "devDependencies": {

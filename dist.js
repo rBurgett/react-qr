@@ -2,11 +2,12 @@
 
 var React = require('react');
 var qrImage = require('qr-image');
+var PropTypes = require('prop-types');
 
 var ReactQR = React.createClass({
   displayName: 'ReactQR',
   propTypes: {
-    text: React.PropTypes.string.isRequired
+    text: PropTypes.string.isRequired
   },
   render: function render() {
     var pngBuffer = qrImage.imageSync(this.props.text, { type: 'png', margin: 1 });
@@ -16,4 +17,3 @@ var ReactQR = React.createClass({
 });
 
 module.exports = ReactQR;
-
